@@ -8,7 +8,7 @@ Los datos utilizados para el acceso al servicio son los siguientes:
 
 var baseURL = "https://api.themoviedb.org/"
 
-  @GET("3/movie/popular")
+    @GET("3/movie/popular")
     fun getMovies(@Header("Authorization") authHeader: String,
                   @Query("api_key") apiKey: String): Call<MoviesResponse>
 
